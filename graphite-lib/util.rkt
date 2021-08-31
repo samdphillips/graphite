@@ -1,6 +1,5 @@
 #lang racket/base
 (require (for-syntax racket/base syntax/parse)
-         data-frame
          pict
          plot/no-gui
          plot/utils
@@ -12,6 +11,7 @@
          racket/set
          racket/vector
          threading
+         "framey.rkt"
          "parameters.rkt")
 
 (provide (all-defined-out)

@@ -1,6 +1,5 @@
 #lang racket/base
-(require data-frame
-         fancy-app
+(require fancy-app
          file/convertible
          pict
          plot/utils
@@ -18,6 +17,7 @@
          "error-bars.rkt"
          "faceting.rkt"
          "fit.rkt"
+         "framey.rkt"
          "histogram.rkt"
          "lines.rkt"
          "points.rkt"

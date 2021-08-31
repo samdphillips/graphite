@@ -1,8 +1,19 @@
 #lang racket
-(require data-frame gregor plot/utils graphite)
+
+(require data-frame
+         tabular-asa
+         gregor
+         plot/utils
+         graphite)
 (provide (all-defined-out))
 
-(define chic-raw (df-read/csv "data/chicago-nmmaps.csv"))
+
+(define chic-raw-df
+  (df-read/csv "data/chicago-nmmaps.csv"))
+(define chic-raw-tbl
+  (call-with-input-file "data/chicago-nmmaps.csv"
+    (lambda (inp)
+      (table-read/csv inp))))
 
 (graph #:data chic-raw
        #:title "Temperatures in Chicago"

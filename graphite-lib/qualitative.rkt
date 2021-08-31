@@ -1,8 +1,8 @@
 #lang racket/base
-(require data-frame
-         fancy-app
+(require fancy-app
          plot/utils
          racket/match
+         "framey.rkt"
          "util.rkt")
 (provide qualitative? qualitative-iso qualitative-ticks variable-iso)
 
